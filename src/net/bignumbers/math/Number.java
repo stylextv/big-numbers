@@ -1,4 +1,4 @@
-package net.cash.math;
+package net.bignumbers.math;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;

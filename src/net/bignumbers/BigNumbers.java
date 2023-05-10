@@ -1,8 +1,8 @@
-package net.cash;
+package net.bignumbers;
 
-import net.cash.math.Number;
+import net.bignumbers.math.Number;
 
-public class Cash {
+public class BigNumbers {
 	
 	public static void main(String[] args) {
 		Number n1 = Number.valueOf(25);
