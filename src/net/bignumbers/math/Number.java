@@ -9,6 +9,7 @@ public class Number {
 	private static final int DEFAULT_EXPONENT = 0;
 	private static final int DEFAULT_BASE = 1000;
 	
+	private static final int MAX_FRIENDLY_EXPONENT = 4;
 	private static final String[] FRIENDLY_EXPONENT_NAMES = { "", "K", "M", "B", "T" };
 	private static final DecimalFormat FRIENDLY_VALUE_FORMAT = new DecimalFormat("0.#", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
 	
@@ -28,7 +29,7 @@ public class Number {
 	
 	@Override
 	public String toString() {
-		return exponent < DEFAULT_EXPONENT ? toScientificString() : toFriendlyString();
+		return exponent < DEFAULT_EXPONENT || exponent > MAX_FRIENDLY_EXPONENT ? toScientificString() : toFriendlyString();
 	}
 	
 	public String toFriendlyString() {
