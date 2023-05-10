@@ -1,2 +1,2 @@
 # big-numbers
-Java implementation of big numbers
+A Java implementation of big numbers.
